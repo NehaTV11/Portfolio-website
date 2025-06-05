@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <div class="intro">
+            <h1>Hello, I'm Neha</h1>
+            <p>Creative Developer & Designer</p>
+            <button class="btn">View My Work</button>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid" id="portfolioItems">
+            <!-- Projects will be inserted here via JavaScript -->
+        </div>
+    </section>
+
+    <section id="blog" class="section blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid" id="blogPosts">
+            <!-- Blog posts will load here dynamically -->
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <div id="formMessage"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Neha T.V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
